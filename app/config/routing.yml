@@ -1,0 +1,4 @@
+image_process_image_process:
+    resource: "@ImageProcessImageProcessBundle/Controller/"
+    type:     annotation
+    prefix:   /

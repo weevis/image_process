@@ -1,0 +1,21 @@
+services:
+    ImageProcess\ImageProcessBundle\:
+        resource: '../../*'
+        exclude: '../../{Entity,Repository,Tests}'
+
+    ImageProcess\ImageProcessBundle\Service\:
+        resource: '../../Service'
+        public: true
+
+    ImageProcess\ImageProcessBundle\Controller\:
+        resource: '../../Controller'
+        public: true
+        tags: ['controller.service_arguments']
+
+    ImageProcess\ImageProcessBundle\Exception\:
+        resource: '../../Exception'
+        public: true
+
+#    image_process_image_process.example:
+#        class: ImageProcess\ImageProcessBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
